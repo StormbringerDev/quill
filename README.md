@@ -3,7 +3,7 @@
 A lightweight, expressive scripting language.
 
 Quill is designed as a fast-to-build, enjoyable scripting language with a clean syntax.  
-It serves as a practical learning vehicle and a foundation that will later inform the more systems-oriented [Rune](https://https://github.com/StormbringerDev/rune-lang) language.
+It serves as a practical learning vehicle and a foundation that will later inform the more systems-oriented [Rune](https://github.com/StormbringerDev/rune-lang) language.
 
 ### Implementation Roadmap
 
