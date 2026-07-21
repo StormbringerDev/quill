@@ -1,0 +1,27 @@
+// examples/control.quill
+// If / while / blocks
+
+print("=== Control Flow ===");
+
+let n = 0;
+while (n < 5) {
+  print("n = " + n);
+  n = n + 1;
+}
+
+if (n == 5) {
+  print("Loop finished correctly");
+} else {
+  print("Something went wrong");
+}
+
+fn max(a, b) {
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
+}
+
+print("max(10, 7) = " + max(10, 7));
+print("max(3, 9)  = " + max(3, 9));

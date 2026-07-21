@@ -1,0 +1,12 @@
+[package]
+name = "quill-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Embedding API and standard library for Quill"
+
+[dependencies]
+quill-core = { path = "../quill-core" }
+quill-bytecode = { path = "../quill-bytecode" }
+thiserror = { workspace = true }
+anyhow = { workspace = true }

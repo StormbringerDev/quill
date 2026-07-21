@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/quill-core",
+  "crates/quill-bytecode",
+  "crates/quill-jit",
+  "crates/quill-runtime",
+  "apps/quill-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+repository = "https://github.com/StormbringerDev/quill-lang"
+authors = ["StormbringerDev"]
+
+[workspace.dependencies]
+thiserror = "2.0.19"
+anyhow = "1.0.104"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+
+# Will be used later
+# cranelift-codegen = "0.134.1"
+# cranelift-frontend = "0.134.1"
+# cranelift-module = "0.134.1"
+# cranelift-jit = "0.134.1"
