@@ -1,4 +1,4 @@
-# Quill
+# Quill 🪶
 
 A lightweight, expressive scripting language.
 
