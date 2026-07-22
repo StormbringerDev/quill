@@ -67,14 +67,14 @@ cargo run -p quill-cli
 
 ```quill
 // examples/hello.quill
-let name = "world"
-print("Hello, " + name + "!")
+let name = "world";
+print("Hello, " + name + "!");
 
 fn add(a, b) {
-  return a + b
+  return a + b;
 }
 
-print(add(40, 2))
+print(add(40, 2));
 ```
 
 ## Development

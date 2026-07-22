@@ -15,7 +15,7 @@
     "fmt": "prettier --write \"**/*.{ts,tsx,js,json,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.9.5",
+    "prettier": "^3.9.6",
     "turbo": "^2.10.5",
     "typescript": "^7.0.2"
   },
