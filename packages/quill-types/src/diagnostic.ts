@@ -1,4 +1,4 @@
-import { Span } from "./location.js";
+import type { Span } from "./location.js";
 
 export interface Diagnostic {
   readonly message: string;

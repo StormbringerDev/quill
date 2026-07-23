@@ -14,9 +14,12 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "dev": "tsc -p tsconfig.json --watch",
-    "check": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint src --max-warnings 0",
+    "check": "tsc -p tsconfig.json --noEmit && esint src --max-warnings 0",
     "clean": "rm -rf dist *.tsbuildinfo",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests 2>/dev/null || echo 'No jest yet - run via REPL or examples'"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@quill/ast": "workspace:*",
@@ -24,6 +27,6 @@
     "@quill/types": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.3"
   }
 }
