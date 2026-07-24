@@ -1,8 +1,8 @@
 {
-  "name": "quill",
+  "name": "cantrip",
   "version": "0.1.0",
   "private": true,
-  "description": "Quill - a lightweight scripting language",
+  "description": "Cantrip - a lightweight scripting language",
   "packageManager": "pnpm@9.15.0",
   "scripts": {
     "build": "turbo run build",
@@ -11,7 +11,7 @@
     "check": "turbo run check",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules .turbo",
-    "repl": "pnpm --filter quill-repl-ts dev",
+    "repl": "pnpm --filter cantrip-repl-ts dev",
     "fmt": "prettier --write \"**/*.{ts,tsx,js,json,md}\""
   },
   "devDependencies": {

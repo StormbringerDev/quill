@@ -1,0 +1,7 @@
+// examples/hello.ctrp
+// The classic first program.
+
+print("Hello, Cantrip!");
+
+let name = "world";
+print("Hello, " + name + "!");

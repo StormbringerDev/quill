@@ -1,1 +1,1 @@
-# Quill Language Server / Editor support (future)
+# Cantrip Language Server / Editor support (future)

@@ -36,14 +36,14 @@ importers:
         specifier: ^4.1.10
         version: 4.1.10(@types/node@26.1.1)(@vitest/coverage-v8@4.1.10)(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(tsx@4.23.1))
 
-  apps/quill-repl-ts:
+  apps/cantrip-repl-ts:
     dependencies:
-      '@quill/interpreter':
+      '@cantrip/interpreter':
         specifier: workspace:*
-        version: link:../../packages/quill-interpreter
-      '@quill/parser':
+        version: link:../../packages/cantrip-interpreter
+      '@cantrip/parser':
         specifier: workspace:*
-        version: link:../../packages/quill-parser
+        version: link:../../packages/cantrip-parser
     devDependencies:
       '@types/node':
         specifier: ^26.1.1
@@ -55,46 +55,46 @@ importers:
         specifier: 7.0.2
         version: 7.0.2
 
-  packages/quill-ast:
+  packages/cantrip-ast:
     dependencies:
-      '@quill/types':
+      '@cantrip/types':
         specifier: workspace:*
-        version: link:../quill-types
+        version: link:../cantrip-types
     devDependencies:
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
 
-  packages/quill-interpreter:
+  packages/cantrip-interpreter:
     dependencies:
-      '@quill/ast':
+      '@cantrip/ast':
         specifier: workspace:*
-        version: link:../quill-ast
-      '@quill/parser':
+        version: link:../cantrip-ast
+      '@cantrip/parser':
         specifier: workspace:*
-        version: link:../quill-parser
-      '@quill/types':
+        version: link:../cantrip-parser
+      '@cantrip/types':
         specifier: workspace:*
-        version: link:../quill-types
+        version: link:../cantrip-types
     devDependencies:
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
 
-  packages/quill-parser:
+  packages/cantrip-parser:
     dependencies:
-      '@quill/ast':
+      '@cantrip/ast':
         specifier: workspace:*
-        version: link:../quill-ast
-      '@quill/types':
+        version: link:../cantrip-ast
+      '@cantrip/types':
         specifier: workspace:*
-        version: link:../quill-types
+        version: link:../cantrip-types
     devDependencies:
       typescript:
         specifier: 6.0.3
         version: 6.0.3
 
-  packages/quill-types:
+  packages/cantrip-types:
     devDependencies:
       typescript:
         specifier: ^6.0.3
@@ -753,9 +753,9 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  brace-expansion@5.0.7:
-    resolution: {integrity: sha512-7oFy703dxfY3/NLxC1fh2SUCQ0H9rmAY+5EpDVfXjUTTs+HEwR2nYaqLv+GWcTsumwxPfiz6CzCNkwXwBUwqCA==}
-    engines: {node: 18 || 20 || >=22}
+  brace-expansion@5.0.8:
+    resolution: {integrity: sha512-JZyDyq3D4AUifKTPOB7DELf6XsB3WdPuNxCtob1vFXPsSXhdAiHBWJ/tJ8HAc9aH84BK+5JFZLNkJKx3G9kzQg==}
+    engines: {node: 20 || >=22}
 
   chai@6.2.2:
     resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
@@ -1802,7 +1802,7 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  brace-expansion@5.0.7:
+  brace-expansion@5.0.8:
     dependencies:
       balanced-match: 4.0.4
 
@@ -2081,7 +2081,7 @@ snapshots:
 
   minimatch@10.2.5:
     dependencies:
-      brace-expansion: 5.0.7
+      brace-expansion: 5.0.8
 
   ms@2.1.3: {}
 

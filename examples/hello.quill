@@ -1,7 +1,0 @@
-// examples/hello.quill
-// The classic first program.
-
-print("Hello, Quill!");
-
-let name = "world";
-print("Hello, " + name + "!");

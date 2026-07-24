@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  },
+  "include": ["src/**/*"],
+  "references": [
+    {
+      "path": "../../packages/cantrip-interpreter"
+    },
+    {
+      "path": "../../packages/cantrip-parser"
+    }
+  ]
+}

@@ -59,6 +59,51 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "330a5ed07fa54e4702c9d6c4174f74427fc0ef6e214bbd677ae50a5099946470"
 
 [[package]]
+name = "cantrip-bytecode"
+version = "0.1.0"
+dependencies = [
+ "cantrip-core",
+ "thiserror",
+]
+
+[[package]]
+name = "cantrip-cli"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "cantrip-core",
+ "cantrip-runtime",
+ "clap",
+]
+
+[[package]]
+name = "cantrip-core"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "cantrip-jit"
+version = "0.1.0"
+dependencies = [
+ "cantrip-bytecode",
+ "cantrip-core",
+ "thiserror",
+]
+
+[[package]]
+name = "cantrip-runtime"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "cantrip-bytecode",
+ "cantrip-core",
+ "thiserror",
+]
+
+[[package]]
 name = "clap"
 version = "4.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -129,51 +174,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9"
 dependencies = [
  "unicode-ident",
-]
-
-[[package]]
-name = "quill-bytecode"
-version = "0.1.0"
-dependencies = [
- "quill-core",
- "thiserror",
-]
-
-[[package]]
-name = "quill-cli"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "clap",
- "quill-core",
- "quill-runtime",
-]
-
-[[package]]
-name = "quill-core"
-version = "0.1.0"
-dependencies = [
- "serde",
- "thiserror",
-]
-
-[[package]]
-name = "quill-jit"
-version = "0.1.0"
-dependencies = [
- "quill-bytecode",
- "quill-core",
- "thiserror",
-]
-
-[[package]]
-name = "quill-runtime"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "quill-bytecode",
- "quill-core",
- "thiserror",
 ]
 
 [[package]]

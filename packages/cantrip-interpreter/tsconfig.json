@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true
+  },
+  "include": ["src/**/*"],
+  "references": [
+    {
+      "path": "../cantrip-types"
+    },
+    {
+      "path": "../cantrip-ast"
+    },
+    {
+      "path": "../cantrip-parser"
+    }
+  ]
+}

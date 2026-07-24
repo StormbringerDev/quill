@@ -1,9 +1,9 @@
-# Quill 🪶
+# Cantrip
 
 A lightweight, expressive scripting language.
 
-Quill is designed as a fast-to-build, enjoyable scripting language with a clean syntax.  
-It serves as a practical learning vehicle and a foundation that will later inform the more systems-oriented [Rune](https://github.com/StormbringerDev/rune-lang) language.
+Cantrip is designed as a fast-to-build, enjoyable scripting language with a clean syntax.  
+It serves as a practical learning vehicle and a foundation that will later inform the more systems-oriented [Ward](https://github.com/StormbringerDev/ward-lang) language.
 
 ### Implementation Roadmap
 
@@ -18,22 +18,21 @@ It serves as a practical learning vehicle and a foundation that will later infor
 ## Monorepo Layout
 
 ```
-quill/
+cantrip/
 ├── apps/
-│   ├── quill-cli/          # Rust CLI (REPL + runner) — the main `quill` binary
-│   └── quill-repl-ts/      # Pure TypeScript REPL for rapid prototyping
-├── crates/                 # Rust workspace
-│   ├── quill-core/         # Shared AST, values, errors, opcodes
-│   ├── quill-bytecode/     # Bytecode compiler + VM
-│   ├── quill-jit/          # JIT backend (future)
-│   └── quill-runtime/      # Embedding API + standard library
-├── packages/               # TypeScript (pnpm workspace)
-│   ├── quill-ast/          # Shared AST types
-│   ├── quill-parser/       # Recursive descent / Pratt parser
-│   ├── quill-interpreter/  # Tree-walking interpreter (Stage 1)
-│   └── quill-types/        # Shared TS utilities
-├── examples/               # .quill scripts (golden tests live here)
-├── tests/                  # Cross-implementation tests
+│   ├── cantrip-cli/          # Rust CLI (REPL + runner) — the main `cantrip` binary
+│   └── cantrip-repl-ts/      # Pure TypeScript REPL for rapid prototyping
+├── crates/                   # Rust workspace
+│   ├── cantrip-core/         # Shared AST, values, errors, opcodes
+│   ├── cantrip-bytecode/     # Bytecode compiler + VM
+│   ├── cantrip-jit/          # JIT backend (future)
+│   └── cantrip-runtime/      # Embedding API + standard library
+├── packages/                 # TypeScript (pnpm workspace)
+│   ├── cantrip-ast/          # Shared AST types
+│   ├── cantrip-parser/       # Recursive descent / Pratt parser
+│   ├── cantrip-interpreter/  # Tree-walking interpreter (Stage 1)
+│   └── cantrip-types/        # Shared TS utilities
+├── examples/                 # .ctr scripts (golden tests live here)
 └── docs/
 ```
 
@@ -47,8 +46,8 @@ quill/
 
 ```bash
 # Clone & enter
-git clone https://github.com/StormbringerDev/quill.git
-cd quill
+git clone https://github.com/StormbringerDev/cantrip.git
+cd cantrip
 
 # Install JS dependencies
 pnpm install
@@ -57,16 +56,16 @@ pnpm install
 pnpm build
 
 # Run the TypeScript REPL
-pnpm --filter quill-repl-ts dev
+pnpm --filter cantrip-repl-ts dev
 
 # Run the Rust CLI (not yet implemented)
-cargo run -p quill-cli
+cargo run -p cantrip-cli
 ```
 
 ### Example
 
-```quill
-// examples/hello.quill
+```cantrip
+// examples/hello.ctr
 let name = "world";
 print("Hello, " + name + "!");
 

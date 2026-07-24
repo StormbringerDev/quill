@@ -1,18 +1,18 @@
 [workspace]
 resolver = "2"
 members = [
-  "crates/quill-core",
-  "crates/quill-bytecode",
-  "crates/quill-jit",
-  "crates/quill-runtime",
-  "apps/quill-cli",
+  "crates/cantrip-core",
+  "crates/cantrip-bytecode",
+  "crates/cantrip-jit",
+  "crates/cantrip-runtime",
+  "apps/cantrip-cli",
 ]
 
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
 license = "GPL-3.0-only"
-repository = "https://github.com/StormbringerDev/quill"
+repository = "https://github.com/StormbringerDev/cantrip"
 authors = ["StormbringerDev"]
 
 [workspace.dependencies]

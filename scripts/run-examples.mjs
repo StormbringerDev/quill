@@ -4,23 +4,25 @@
  * Usage (from repo root, after pnpm install && pnpm build):
  *   node scripts/run-examples.mjs
  */
-import { readdirSync, readFileSync } from 'node:fs';
-import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { readdirSync, readFileSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 
 // Dynamic import so it works after build
-const { run } = await import(join(root, "packages/quill-interpreter/dist/index.js"));
+const { run } = await import(join(root, "packages/cantrip-interpreter/dist/index.js"));
 
 const examplesDir = join(root, "examples");
-const files = readdirSync(examplesDir).filter((f) => f.endsWith(".quill")).sort();
+const files = readdirSync(examplesDir)
+  .filter((f) => f.endsWith(".ctr"))
+  .sort();
 
 let passed = 0;
 let failed = 0;
 
-console.log("Running Quill examples...\n");
+console.log("Running Cantrip examples...\n");
 
 for (const file of files) {
   const path = join(examplesDir, file);

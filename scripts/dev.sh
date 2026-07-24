@@ -7,10 +7,10 @@ cd "$ROOT"
 
 case "${1:-}" in
 repl)
-  pnpm --filter quill-repl-ts dev
+  pnpm --filter cantrip-repl-ts dev
   ;;
 demo)
-  cargo run -p quill-cli -- demo
+  cargo run -p cantrip-cli -- demo
   ;;
 test)
   pnpm test
